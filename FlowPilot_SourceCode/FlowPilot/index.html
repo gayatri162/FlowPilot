@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FlowPilot | Turn goals into action</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><a class="brand" href="#"><span class="brand-mark">✦</span> FlowPilot</a><span class="tag">GOAL → ACTION</span></header>
+<main>
+<section class="hero"><p class="eyebrow">A SIMPLE WORKFLOW BUILDER</p><h1>Make your next step<br><span>obvious.</span></h1>
+<p class="intro">Turn a goal that feels overwhelming into a practical, reviewable plan—one small step at a time.</p></section>
+<section class="panel">
+<label for="goal">What are you trying to accomplish?</label>
+<textarea id="goal" placeholder="Example: Organise a college event with a small team in two weeks..."></textarea>
+<div class="form-row"><div><label for="time">Time available</label><select id="time"><option>Today</option><option selected>This week</option><option>Two weeks</option><option>This month</option></select></div><button id="build">Build my workflow <span>→</span></button></div>
+<p class="fineprint">Prototype note: this demo uses transparent, rule-based templates in your browser. No data is sent to a server and no live AI model is connected.</p>
+</section>
+<section id="result" class="panel hidden"><div class="result-head"><div><p class="eyebrow">YOUR STARTER PLAN</p><h2 id="plan-title">Your plan</h2></div><button class="secondary" id="reset">Start over</button></div><p id="plan-meta" class="meta"></p><div id="steps"></div><h3>Before you begin</h3><ul><li>Check that the outcome and deadline are clear.</li><li>Confirm assumptions with your team or intended users.</li><li>Assign an owner and a completion signal to each step.</li></ul><button id="download">Download plan (.txt)</button></section>
+<section class="how"><p class="eyebrow">THREE SIMPLE MOVES</p><div class="cards"><article><b>01</b><h3>Describe</h3><p>Write the goal in your own words.</p></article><article><b>02</b><h3>Structure</h3><p>Get a manageable starter workflow.</p></article><article><b>03</b><h3>Verify</h3><p>Review the plan before relying on it.</p></article></div></section>
+<footer>FlowPilot is an early learning prototype. Suggestions are generic and should be reviewed before use.</footer>
+</main><script src="app.js"></script></body></html>
